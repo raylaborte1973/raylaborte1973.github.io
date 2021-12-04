@@ -1,129 +1,60 @@
 <!DOCTYPE html>
-<html>
-<title>Laborte Weblog</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<link rel="stylesheet" href="styles.css">
-<script src="main.js"></script>
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-
-
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborte Finals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:695px)" href="phone1.css">
+    
+</head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-</nav>
+    <section id="home">
+        <h1 class="heading">I am</h1>
+        <h1 class="heading">Ray Vincent Laborte</h1>
+        <br><br>
+        <p>This is my Website Tutorial for my System Admin Course videos</p>
+    </section>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16"></div>
-    <div class="w3-center w3-padding-16"><strong>8 Ways to Stay Healthy and Prevent Cancer</strong></div>
-  </div>
-</div>
-  
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
-  <!-- First Photo Grid-->
-  <hr>
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="images/Mandarin-Chicken-Salad-8.jpg" alt="Sandwich" style="width:100%">
-      <h3><strong>Eat a large Serving Salad!</strong></h3>
-      <p>Eating salad almost every day may be one of the most healthy eating habits we can adopt -- and one of the simplest, experts say.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/images/fruits.jpg" style="width:100%" height="410">
-      <h3><strong>Eat Fresh Fruits!</strong></h3>
-      <p>Fruit and vegetables are a good source of vitamins and minerals, including folate, vitamin C and potassium. They're an excellent source of dietary fibre, which can help to maintain a healthy gut and prevent constipation and</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/images/milk.jpg" alt="Cherries" style="width:100%" height="410">
-      <h3><strong>Drink a glass of Milk!</strong></h3>
-      <p>Drinking milk is packed with important nutrients like calcium, phosphorus, vitamin B, potassium and vitamin D. Plus, it's an excellent source of protein. </p>
-      <p></p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/images/exercise.jpg" alt="Pasta and Wine" style="width:100%" height="410">
-      <h3><strong>Do some Exercise!</strong></h3>
-      <p>Exercise delivers oxygen and nutrients to our tissues and helps our cardiovascular system work more effeciently. And when our heart and lung health improves, we have more energy to tackle daily chores.</p>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="images/no-smoking-sign.jpg" alt="Popsicle" style="width:100%" height="410">
-      <h3><strong>Don’t Smoke</strong></h3>
-      <p>Cigarette smoking is the number one risk factor for lung cancer. In the United States alone, cigarette smoking is linked to about 80% to 90% of lung cancer deaths. </p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/images/alcohol.jpg" alt="Salmon" style="width:100%" height="410">
-      <h3><strong> Alcohol Only in Moderation, If at All</strong></h3>
-      <p>Moderate drinking is good for the heart, as many people already know, but it can also increase the risk of cancer. If you don’t drink, don’t feel that you need to start. If you already drink moderately (less than one drink a day for women, less than two drinks a day for men), there’s probably no reason to stop. People who drink more, though, should cut back.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/images/maintain weight.jpg" alt="Sandwich" style="width:100%" height="410">
-      <h3><strong>Maintain a Healthy Weight</strong></h3>
-      <p>Keeping your weight in check is often easier said than done, but a few simple tips can help. First off, if you’re overweight, focus initially on not gaining any more weight. This by itself can improve your health.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/images/condom.jpg" alt="Croissant" style="width:100%" height="410">
-      <h3><strong>Protect Yourself From Sexually Transmitted Infections</strong></h3>
-      <p>Among other problems, sexually transmitted infections – like human papillomavirus (HPV) – are linked to a number of different cancers. Protecting yourself from these infections can lower your risk.
-        </p>
-        <p>Tips
-        Aside from not having sex, the best protection is to be in a committed, monogamous relationship with someone who does not have a sexually transmitted infection.
-        For all other situations, be sure to always use a condom and follow other safe-sex practices.
-        Never rely on your partner to have a condom. Always be prepared.</p>
-    </div>
-  </div>
+    <section id="about">
+        <h1 class="heading">About me</h1>
+        <div class="about">
+            <img src="/Portfolio/Images/ray-img.png" alt="My Pic">
+            <div class="name">
+                <h2>Ray Vincent Laborte</h2>
+                <p>Im currently studying at University of Southern Philippines Foundation and Im on my last year level in College. Im 24 years old, and I was born on July 27, 1997. Im the second child of the family and my hobbies are playing video games, playing basketball and I also love to read books.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
-  <hr id="about">
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3><strong>The Healthy Man</strong></h3><br>
-    <img src="/images/strong.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b><strong>You are what you Eat!</strong></b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      This phrase is the notion that to be fit and healthy you need to eat good food. In a literal sense, we all can agree that it’s true that ‘you are what you eat’. Nutrients from the foods we eat provide the foundation of the structure, function, and wholeness of every little cell in our body, from the skin and hair to the muscles, bones, digestive and immune systems. We may not feel it, but we’re constantly repairing, healing and rebuilding our body.
-      <p><strong><br>For more informations visit this website! <br><a target="_blank" href="https://siteman.wustl.edu/prevention/take-proactive-control/8-ways-to-stay-healthy-and-prevent-cancer/">https://siteman.wustl.edu/prevention/take-proactive-control/8-ways-to-stay-healthy-and-prevent-cancer/</a></strong></p>
-     
-    </div>
-  </div>
-  <hr>
-  
-  <!-- Footer -->
-  
-  </footer>
+    <section id="portfolio">
+        <h1 class="heading">Portfolio</h1>
+        <h1>CLICK EACH IMAGE TO REDIRECT TO ANOTHER WEBPAGE <br> <br> 
+            <p>1. Installation of Virtual Box</p>
+            <p>2. Installation of Windows Server</p>
+            <p>3. How to change root domain name and how to make shared folders</p>
+            <p>4. Joining Workstation in a server</p>
+        </h1>
+        <div class="gallery" id="galleries">
+            <img src="Images/image-1.png" id="vid1" alt="video1">
+            <img src="Images/image-2.png" id="vid2" alt="video2">
+            <img src="Images/image-3.png" id="vid3" alt="video3">
+            <img src="Images/image-4.png" id="vid4" alt="video4">
+        </div>
+    </section>
 
-<!-- End page content -->
-</div>
-
+    <script src="main.js"></script>
 </body>
 </html>

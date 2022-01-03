@@ -121,7 +121,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-image: url("/system admin/images/home-background.jpg");
+  background-image: url("/images/home-background.jpg");
   background-position: center;
   background-size: cover; }
   .fh5co-top-banner::after {
